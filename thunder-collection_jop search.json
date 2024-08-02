@@ -1,0 +1,627 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "jop search",
+    "dateExported": "2024-02-08T15:25:36.243Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-04T16:46:47.098Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "company",
+            "containerId": "",
+            "created": "2024-02-02T16:45:45.481Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "job",
+            "containerId": "",
+            "created": "2024-02-02T23:13:15.511Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f6a0f656-30e4-45ee-9274-08adc980ca95",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "add company",
+            "url": "http://localhost:3000/company/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-02T16:46:24.559Z",
+            "modified": "2024-02-08T14:19:29.609Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"companyName\": \" trandil\",\n  \"companyEmail\": \"trandil@gmail.com\",\n  \"description\": \"vintage\",\n  \"industry\": \"for memories\",\n  \"address\": \"nasr city\",\n  \"numberOfEmployees\": 20,\n  \"companyHR\": \"65c4e26c9fe71238d4b27575\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "33828c80-bcd7-44df-8ba6-36e683e8d998",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "update company ",
+            "url": "http://localhost:3000/company/65c4e2eb9fe71238d4b27584",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-02-02T17:04:36.841Z",
+            "modified": "2024-02-08T14:24:24.688Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n  \"description\": \"dahab travel \",\n  \"industry\": \"tarveling\",\n  \"address\": \"20 st new egypt\",\n  \"numberOfEmployees\": 11,\n  \"companyHR\":\"65c4e26c9fe71238d4b27575\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac214d43-898b-421a-bbd7-d750821af338",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "delete company data",
+            "url": "http://localhost:3000/company/65c4e2eb9fe71238d4b27584",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-02-02T17:25:25.038Z",
+            "modified": "2024-02-08T14:25:23.254Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"companyHR\":\"65c4e26c9fe71238d4b27575\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2d48a5c8-dc50-48b9-b727-b4897356c5fe",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "get all company",
+            "url": "http://localhost:3000/company/allCompany",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-02T18:56:51.258Z",
+            "modified": "2024-02-06T20:08:34.111Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "424a548e-57b4-433e-99c5-94ce3ce05998",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "get company id ",
+            "url": "http://localhost:3000/company/getCompanyId/65c278e6a47b91381b717284",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-02T18:57:52.278Z",
+            "modified": "2024-02-08T14:25:53.123Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuYXNhc2hvdXNoQGdtYWlsLmNvbSIsImlkIjoiNjVjMTg0ZWQyZDExMjg0ZDAwYTQ0ZTg3IiwiaWF0IjoxNzA3MjQyNTI2LCJleHAiOjE3MDk4MzQ1MjZ9.thAMMtX9LxZGJzfhcZIKfCp3ZnnlaEGg1xMgD4k7rwc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a07be738-9ae1-4fed-b169-b24c9df926e0",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "add job",
+            "url": "http://localhost:3000/job/addJob",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-02T23:14:32.689Z",
+            "modified": "2024-02-08T14:45:39.935Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMzA1NSwiZXhwIjoxNzA5OTk1MDU1fQ.i4AG3Ryr2j5Rp6nEwZha7WaIsqEemq8LBxHxlZDHO7I"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"jobTitle\": \"front end\",\n  \"jobLocation\": \"onsite\",\n  \"workingTime\":\"part-time\",\n  \"seniorityLevel\":\"Junior\",\n  \"jobDescription\":\"back end developer\",\n  \"technicalSkills\": [\"css\", \"html\" ,\"java\" ,\"script\"],\n  \"softSkills\": [\"communication\" , \"leadership\"],\n  \"companyId\": \"65bfb0641cb284054fc6419d\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3baa2ae-f0f7-42d5-87f4-3bba64be066b",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "search Company Name",
+            "url": "http://localhost:3000/company/searchCompanyName?search=s",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-06T15:28:58.141Z",
+            "modified": "2024-02-08T14:26:04.012Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuYXNhc2hvdXNoQGdtYWlsLmNvbSIsImlkIjoiNjVjMTg0ZWQyZDExMjg0ZDAwYTQ0ZTg3IiwiaWF0IjoxNzA3MjQ0NDAzLCJleHAiOjE3MDk4MzY0MDN9.Utcspp8bC2pnMlYwuJ3Mb6BNxWUS4yyjpS8gmz6RihM"
+                }
+            ],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "s",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6c7bf571-4cf3-4d9d-a1a4-8d2d9e62b3e5",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "apply job",
+            "url": "http://localhost:3000/job/applyJob",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-02-06T21:45:09.442Z",
+            "modified": "2024-02-08T14:27:31.535Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "userTechSkills",
+                        "value": "javascript"
+                    },
+                    {
+                        "name": "userSoftSkills",
+                        "value": "leadership"
+                    },
+                    {
+                        "name": "userSoftSkills",
+                        "value": "comunication",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "jobId",
+                        "value": "65c4b4c3a0f349ee0909f9ea"
+                    },
+                    {
+                        "name": "jobTitle",
+                        "value": "front end"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "d:\\Project\\collage research\\Graduation project\\Graduation Project Content.pdf"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee790fe4-3f27-47aa-9ead-d6dde1990a59",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "update job ",
+            "url": "http://localhost:3000/job/65c4e4b49fe71238d4b2759c",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-03T00:05:54.483Z",
+            "modified": "2024-02-08T14:29:36.239Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojknosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"jobTitle\": \"front end\",\n  \"jobLocation\": \"hybrid\",\n  \"workingTime\":\"part-time\",\n  \"seniorityLevel\":\"Junior\",\n  \"jobDescription\":\"front end and back end developer\",\n  \"technicalSkills\": [\"css\", \"html\" ,\"java\" ,\"script\", \"react\", \"node js\"],\n  \"softSkills\": [\"communication\" , \"leadership\"],\n  \"companyId\": \"65bfb0641cb284054fc6419d\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d6c44ee-e282-4235-8d4d-65b1c7acd596",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "a8479422-41fd-408f-be14-f51348764946",
+            "name": "application with job",
+            "url": "http://localhost:3000/company/getSpacificApplication/65bfb0641cb284054fc6419d",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-06T22:38:40.403Z",
+            "modified": "2024-02-08T14:37:59.974Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMzA1NSwiZXhwIjoxNzA5OTk1MDU1fQ.i4AG3Ryr2j5Rp6nEwZha7WaIsqEemq8LBxHxlZDHO7I"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ca44a2f6-d8ad-49af-838f-51e5e06a0204",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "delete job",
+            "url": "http://localhost:3000/job/65c4e4b49fe71238d4b2759c",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-02-03T00:18:17.923Z",
+            "modified": "2024-02-08T14:31:34.150Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "12b0bbfa-d4f5-4999-9b8b-817a20290260",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "get spacific job for one company",
+            "url": "http://localhost:3000/job/getSpacific?companyName=eunoia",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-03T00:29:28.030Z",
+            "modified": "2024-02-08T14:32:18.033Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [
+                {
+                    "name": "companyName",
+                    "value": "eunoia",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c7e3551d-0b5a-45c8-9598-f979142dbd3c",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "get all job for one company",
+            "url": "http://localhost:3000/job/getAll",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-04T14:38:13.800Z",
+            "modified": "2024-02-08T14:32:30.254Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMTkwOCwiZXhwIjoxNzA5OTkzOTA4fQ.L0Vn7LuDYErq_-e2iMPk2XeV3A8KbbyjmcYdVaugojk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "511d339a-8577-4456-87db-3c6e439d6d68",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "sign up",
+            "url": "http://localhost:3000/auth/signUp",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-04T17:00:31.130Z",
+            "modified": "2024-02-08T13:37:23.702Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"layal\",\n  \"lastName\": \"mohamed\",\n  \"email\": \"layalmohamed@gmail.com\",\n  \"password\": \"asdasd\",\n  \"cPassword\": \"asdasd\",\n  \"phone\": \"01250895891\",\n  \"recoveryEmail\": \"layal@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e359c6a7-8647-42c7-8116-ada32854ac21",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "sign in",
+            "url": "http://localhost:3000/auth/signIn",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-04T17:54:04.398Z",
+            "modified": "2024-02-08T14:18:28.257Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"phone\": \"01250895891\",\n  \"password\": \"asdasd\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "458b6808-5455-4b3f-b079-e80b629925ba",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "21d3661c-1b8d-4ceb-afea-d756ddb21d70",
+            "name": "get filtered job",
+            "url": "http://localhost:3000/job/filterJob?jobTitle=back end&seniorityLevel=Senior",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-02-06T21:00:34.392Z",
+            "modified": "2024-02-08T15:21:05.078Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRlMjZjOWZlNzEyMzhkNGIyNzU3NSIsImlhdCI6MTcwNzQwMzA1NSwiZXhwIjoxNzA5OTk1MDU1fQ.i4AG3Ryr2j5Rp6nEwZha7WaIsqEemq8LBxHxlZDHO7I"
+                }
+            ],
+            "params": [
+                {
+                    "name": "size",
+                    "value": "5",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "workingTime",
+                    "value": "full-time",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "jobTitle",
+                    "value": "back end",
+                    "isPath": false
+                },
+                {
+                    "name": "search",
+                    "value": "back",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "jobLocation",
+                    "value": "hybrid",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "seniorityLevel",
+                    "value": "Senior",
+                    "isPath": false
+                },
+                {
+                    "name": "technicalSkills",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "jobDescription",
+                    "value": "back end developer",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0b79d832-5246-4e94-8db8-6d79dc94b0cd",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "send code",
+            "url": "http://localhost:3000/auth/sendCode",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-02-04T18:15:50.289Z",
+            "modified": "2024-02-08T13:39:58.425Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"layalmohamed@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa2345c0-72e0-4b8b-a677-6543300fb516",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "forget password",
+            "url": "http://localhost:3000/auth/forgotPassword/layalmohamed@gmail.com",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-02-04T18:19:52.475Z",
+            "modified": "2024-02-08T13:40:29.471Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "n",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\":\"477973\",\n  \"password\":\"123123\",\n  \"cPassword\": \"123123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e401aadf-c344-42d2-a5e1-97da6a7f67af",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "update password",
+            "url": "http://localhost:3000/auth/updatePassword",
+            "method": "PATCH",
+            "sortNum": 140000,
+            "created": "2024-02-04T19:00:26.161Z",
+            "modified": "2024-02-08T13:43:51.794Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRkOTFkNTY0NDYwNzk2NmVhMGVmYiIsImlhdCI6MTcwNzM5OTY1NSwiZXhwIjoxNzA5OTkxNjU1fQ.MENHRgrmG9IEp_Tb3nC2Iw64nzPm8t0Ggwau_e_yxa0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\":\"asdasd\",\n  \"newPassword\":\"123123\",\n  \"cPassword\":\"123123\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfd72fa7-927f-476c-866c-31adb82f67e6",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "update user ",
+            "url": "http://localhost:3000/user",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2024-02-05T12:40:32.718Z",
+            "modified": "2024-02-08T13:46:00.556Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRkOTFkNTY0NDYwNzk2NmVhMGVmYiIsImlhdCI6MTcwNzM5OTY1NSwiZXhwIjoxNzA5OTkxNjU1fQ.MENHRgrmG9IEp_Tb3nC2Iw64nzPm8t0Ggwau_e_yxa0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"recoveryEmail\": \"layal@yahoo.com\",\n  \"DOB\": \"18-8-2020\",\n  \"lastName\": \"mohamed\",\n  \"firstName\": \"layal\",\n  \"_id\": \"65c4d91d5644607966ea0efb\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8722e16-cafb-41e1-9d72-7d600ecf6c49",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "delete user",
+            "url": "http://localhost:3000/user/deleteUser",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-02-05T15:37:26.067Z",
+            "modified": "2024-02-08T13:46:29.819Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxheWFsbW9oYW1lZEBnbWFpbC5jb20iLCJpZCI6IjY1YzRkOTFkNTY0NDYwNzk2NmVhMGVmYiIsImlhdCI6MTcwNzM5OTY1NSwiZXhwIjoxNzA5OTkxNjU1fQ.MENHRgrmG9IEp_Tb3nC2Iw64nzPm8t0Ggwau_e_yxa0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"_id\": \"65c4d91d5644607966ea0efb\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ba8da945-80c7-4a74-b7fb-0baafcfa0edf",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "get user",
+            "url": "http://localhost:3000/user/getUser",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-02-05T15:46:05.368Z",
+            "modified": "2024-02-06T23:45:10.903Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuYXNhc2hyYWZAZ21haWwuY29tIiwiaWQiOiI2NWMyYzQ0MTAxMjg4NTU1MmU1NjIyNjkiLCJpYXQiOjE3MDcyNjMwNzMsImV4cCI6MTcwOTg1NTA3M30.eSWjbOqNsl580G-Ao8prvD1RyrDrJYP_miINNCkhceU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"_id\": \"65c2c441012885552e562269\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a288148-fb7f-4931-8d53-4ae6a6f6588e",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "get recovery email ",
+            "url": "http://localhost:3000/user/getRecoveryEmail/enas23@gmail.com",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-02-05T20:38:45.895Z",
+            "modified": "2024-02-08T13:47:35.842Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7d7bf43c-6d60-4325-ab68-0fdb18f450fb",
+            "colId": "435b1c47-87fa-4222-afe9-45a003bad777",
+            "containerId": "97599684-b2d7-4ab0-a9cc-d28884686809",
+            "name": "get spacific user",
+            "url": "http://localhost:3000/user/getProfiles/65c2c441012885552e562269",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-02-05T23:36:23.538Z",
+            "modified": "2024-02-08T13:47:57.496Z",
+            "headers": [
+                {
+                    "name": "auth",
+                    "value": "nosa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuYXNhc2hyYWZAZ21haWwuY29tIiwiaWQiOiI2NWMyYzQ0MTAxMjg4NTU1MmU1NjIyNjkiLCJpYXQiOjE3MDcyNjMwNzMsImV4cCI6MTcwOTg1NTA3M30.eSWjbOqNsl580G-Ao8prvD1RyrDrJYP_miINNCkhceU",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
